@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/signIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textSize="30sp"
+        android:textColor="#888888"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="8dp"
+        />
+
+    <TextView
+        android:id="@+id/uName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username:"
+        android:textSize="30sp"
+        android:textColor="#888888"
+        android:layout_below="@+id/signIn"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        />
+
+    <EditText
+        android:id="@+id/euser"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/uName"
+        android:layout_below="@+id/signIn"
+        />
+
+
+
+    <TextView
+        android:id="@+id/uPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password:"
+        android:textSize="30sp"
+        android:textColor="#888888"
+        android:layout_below="@+id/uName"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        />
+
+    <EditText
+        android:id="@+id/epass"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/uPass"
+        android:layout_below="@+id/uName"
+        />
+
+    <Button
+        android:id="@+id/btnSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:padding="16dp"
+        android:layout_below="@+id/uPass"
+        android:layout_centerInParent="true"
+        android:onClick="login"
+        />
+</RelativeLayout>
