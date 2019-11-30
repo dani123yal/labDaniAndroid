@@ -17,8 +17,9 @@ public class MainActivity extends AppCompatActivity {
     {
         Intent i= new Intent();
         i.setAction("lab10");
-        i.addFlags(Intent.FLAG_INCLUDE_STOPPED_PACKAGES);
+        //i.addFlags(Intent.FLAG_INCLUDE_STOPPED_PACKAGES);
         i.putExtra("message","hello");
-        sendOrderedBroadcast(i,null);
+        //sendOrderedBroadcast(i,null);
+        sendOrderedBroadcast(i, null);
     }
 }
